@@ -4,17 +4,16 @@
     {
         static void Main(string[] args)
         {
-            int rowWidth;
-            int rowAmount;
+           
             // gathers the values for varriables above
             Console.WriteLine("How Long do you want the Row Width?");
-            rowWidth = int.Parse(Console.ReadLine());
+           int rowWidth = int.Parse(Console.ReadLine());
             Console.WriteLine("How Many Rows do you want?");
-            rowAmount = int.Parse(Console.ReadLine());
+           int  rowAmount = int.Parse(Console.ReadLine());
             // generates the asked for block
-            for (int j = 0; j < rowWidth; j++)
+            for (int j = 0; j < rowAmount; j++)
             {
-                for (int i = 0; i < rowAmount; i++)
+                for (int i = 0; i < rowWidth; i++)
                 {
                     Console.Write("*");
                 }
